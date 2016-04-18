@@ -1,0 +1,138 @@
+
+doctype html
+script(src="http://code.jquery.com/jquery-1.11.3.min.js")  
+link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css')
+script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js')
+link(rel='stylesheet', href='/stylesheets/pqgrid.min.css')
+script(type='text/javascript', src='/javascripts/pqgrid.min.js') 
+
+
+html
+  script. 
+      var health = function() {
+      //var fgrid= document.getElementById('familygrid_array');
+          window.location.href = '/myhealthproblems'
+      }
+      
+      var savePD = function() {
+          alert(fgObj.dataModel.data);
+      }
+      function add(btn) {
+        var mainTable = document.getElementById("mainTbl");
+        var table = document.getElementById("dsTable");
+         $tmpl = $("#dsTable"),
+         html = $tmpl.html();
+         //alert(html);
+         //var row1 = mainTable.insertRow(1);
+         var row = mainTable.insertRow(1);
+         var cell1 = row.insertCell(0);   
+         var cell2 = row.insertCell(1); 
+         
+         var tbl     = document.createElement("table"); 
+         var tblBody = document.createElement("tbody");
+         tblBody.innerHTML  =  html;
+         tbl.appendChild(tblBody);         
+         cell1.appendChild(tbl);
+         cell2.innerHTML = "<input type='button' value='Delete' onclick='deleteRow(this)'/>"
+       } 
+       
+      function deleteRow(btn) {
+       
+        var row = btn.parentNode.parentNode;
+        
+        row.parentNode.removeChild(row);
+       } 
+   
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/medicalhistory.css')
+    
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page     
+      .home
+      
+        .teaser
+          .content
+            h2 My Doctors
+            p Virtual Medicare            
+            
+                 form(name='input1', action='health', method='post')
+                  table(style=' width: 1000px;')
+                    tr
+                     
+                        td(style='width: 900px;')
+                          .home-teaser-icons(align='left')
+                            .home-teaser-icons1 
+                              .form-style-3
+                                form(name='input2', action='/login', method='post')
+                                   div#grid_array
+                                   table#mainTbl
+                                    tr                                           
+                                        td 
+                                            input(type='button', value='Add', onclick='add()')
+                                        td 
+                                        td
+                                    tr
+                                        td
+                                            table#dsTable  
+                                                                                                 
+                                                    tr
+                                                        td Name
+                                                        
+                                                        td 
+                                                                input(type='text', id='name' , value='Tracy')
+                                                                                                                                     
+                                                        td
+                                                                
+                                                                
+                                                    tr
+                                                        td Phone
+                                                        td 
+                                                                input(type='text',id = 'phone', value='8989823293')                                                                                
+                                                        td
+                                                    tr
+                                                        td  fax
+                                                        td 
+                                                                input(type='text',id = 'fax',  value='0902378723')                                                                                
+                                                        td
+                                                    tr
+                                                        td  Speciality
+                                                        td 
+                                                            select.form-control                                                               
+                                                                        option Gynecologist
+                                                                        option ENT Specialist
+                                                                        option Ortho                                                                              
+                                                        td                                                                                            
+                                             
+                                             
+            input.input-field(type='button', name='next', value='next' onclick="health()")
+            input.input-field(type='button', name='save', value='save' onclick="savePD()")                   
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

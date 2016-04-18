@@ -1,0 +1,262 @@
+// doctype html
+// html
+//   head
+//     title= title
+//     link(rel='stylesheet', href='/stylesheets/style.css')
+//   body
+//     block content
+doctype html
+script(src="http://code.jquery.com/jquery-1.11.3.min.js")  
+html
+  script.
+  
+      var health = function() {
+      window.location.href = '/health'
+      }
+      var chat = function() {
+        $('#chatContent').append($('#chatmessage').val()+"<br>");
+        $('#chatempty').height($('#chattop').height()-$('#chatContent').height());
+      }
+      $(document).on('click', '.medheader', function(){
+        $header = $(this);
+        //getting the next element
+        $content = $header.next();
+        //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+        $content.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of header based on visibility of content div
+            $header.text(function () {
+                //change text based on condition
+                return $content.is(":visible") ? "Collapse" : "Expand";
+            });
+        });
+      });
+      
+      $(document).on('click', '.clickMe', function(){
+        alert('Entered');               
+        // $('#chatContent').append($('#chatmessage').val()+"<br>");
+        // $('#chatempty').height($('#chattop').height()-$('#chatContent').height());
+      });
+   
+
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/medicalhistory.css')
+    
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page
+      .home
+       
+        .teaser
+          .content
+            h2 Choose the desired service
+            p Virtual Medicare  --  
+          
+            - if (!user)
+                form(name='input1', action='health', method='post')
+                  table(style=' width: 900px;')
+                    tr
+                      td(style='width: 250px;vertical-align: top;')
+                        .home-teaser-icons
+                          .home-teaser-icons1 
+                            .form-style-3
+                              
+                                fieldset
+                                  legend My Family
+                                  label(for='fname')
+                                    span
+                                      | First Name 
+                                      span.required *
+                                    input.input-field(type='text', name='fname', value='')
+                                  label(for='field2')
+                                    span
+                                      | Last Name 
+                                      span.required *
+                                    input.input-field(type='text', name='lname', value='')
+                                  label(for='field3')
+                                    span
+                                      | Phone 
+                                      span.required *
+                                    input.input-field(type='text', name='phone', value='')
+                                                              
+                                fieldset
+                                  legend Informed Doctors. Better Care
+                                  label(for='field6')
+                                    span(style='width: 250px;')
+                                      | Your health record is 80 % Complete
+                                                                    
+                            br.clear
+                        td(style='width: 500px;')
+                          .home-teaser-icons(align='left')
+                            .home-teaser-icons1 
+                              .form-style-3
+                                form(name='input2', action='/login', method='post')
+                                  fieldset
+                                    legend Health Record (Basics)
+                                    label(for='field1')
+                                      span
+                                        | Height 
+                                        span.required *
+                                      input.input-field(type='text', name='height', value='')
+                                    label(for='field2')
+                                      span
+                                        | Weight 
+                                        span.required *
+                                      input.input-field(type='text', name='weight', value='')
+                                  fieldset
+                                    legend General Care (Encounter)
+                                    label(for='field1')
+                                      span(style='width: 250px;')
+                                        | Encounter
+                                      span(style='width: 250px;')
+                                        | Date of most recent
+                                      table(style=' width: 500px;')
+                                        tr
+                                          td
+                                            input.input-field(type='text',id='12344', name='field11dfdfdf', value='')(style='width: 200px;')
+                                          td
+                                            input.input-field(type='text',id='1234s4', name='field22dfdfd', value='')(style='width: 200px;')
+                                        tr
+                                          td
+                                            input.input-field(type='text',id='123ddd44', name='field111dfdf', value='')(style='width: 200px;')
+                                          td
+                                            input.input-field(type='text',id='123ee3e3e44', name='field112sfdf', value='')(style='width: 200px;')
+                    
+                input(type="submit", value="Submit")                   
+            - else
+              .medcontainer
+                .medheader                  
+                  
+                   span Expand
+                .content
+                  .form-style-3  
+                    
+                    table(style=' width: 900px;')
+                      tr
+                        td(style='width: 250px;vertical-align: top;')
+                          .home-teaser-icons
+                            .home-teaser-icons1 
+                
+                                  fieldset
+                                    legend My Family
+                                    label(for='field1212')
+                                      span
+                                        | First Name 
+                                        span
+                                      label(for='field12122')
+                                      span
+                                        | Rahul                                   
+                                    label(for='field21212')
+                                      span
+                                        | Last Name 
+                                        span
+                                      label(for='field12222')
+                                      span
+                                        | Sharma        
+                                    label(for='field3233')
+                                      span
+                                        | Age 
+                                        span
+                                      label(for='field13434')
+                                      span
+                                        | 25 Yrs                                  
+                                  fieldset
+                                    legend Informed Doctors. Better Care
+                                    label(for='field6')
+                                      span(style='width: 250px;')
+                                        | Your health record is 80 % Complete                              
+                              br.clear
+                          td(style='width: 550px;')
+                            .home-teaser-icons(align='left')
+                              .home-teaser-icons1 
+                
+                                  
+                                  fieldset
+                                      legend Health Record (Basics)
+                                      label(for='field14')
+                                        span(style='width: 250px;')
+                                          | Height 
+                                          span
+                                        label(for='field25')
+                                        span
+                                          | 5.6"                                            
+                                      label(for='field254')
+                                        span(style='width: 250px;')
+                                          | Weight 
+                                          span
+                                        label(for='field2')
+                                        span
+                                          | 68 kg   
+                                    fieldset
+                                      legend General Care (Encounter)
+                                      label(for='field1545')
+                                        span(style='width: 250px;')
+                                          | Encounter
+                                        span(style='width: 250px; ')
+                                          | Date of most recent
+                                        table(style=' width: 500px;')
+                                          tr
+                                            td(style='width: 250px;')                                                        
+                                                
+                                                span
+                                                  | Last visit to primary care physician 
+                                            td
+                                                span(style='width: 250px;')
+                                                    | 01:13:12 
+                                          tr
+                                            td
+                                                span(style='width: 150px;')
+                                                    | Last physical 
+                                            td
+                                                span(style='width: 250px;')
+                                                    | 01:20:12 
+                                  
+                                  input.input-field(type='button', name='edit', value='edit' onclick="health()")
+                         br.clear
+                                         
+            .blog-articles
+            
+              #chatbody
+              
+                #chatleft Dr. Sam, Hill
+                #chatright
+                  #chattop
+                    | Sam, Hill
+                    #chatempty
+                    #chatContent
+                  #chatbottom
+                    | Anand
+                    br
+                    textarea#chatmessage Hi there !!.
+                    br
+                    input.input-field(type='button', name='Send', value='send' onclick="chat()")
+                    // button#clickMe Send  
+                
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

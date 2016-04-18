@@ -1,0 +1,123 @@
+// doctype html
+// html
+//   head
+//     title= title
+//     link(rel='stylesheet', href='/stylesheets/style.css')
+//   body
+//     block content
+doctype html
+html
+   script.
+            
+        var updateSecondSelection = function(){
+            //alert('entered');
+            var Bangalore= new Array('Manipal','Appolo','Narayana','Columbia Asia');
+            var Hyderabad= new Array('Apollo','Asian Institute','Global Hospitals','Continental Hospitals');
+            var Delhi= new Array('Fortis','Indraprastha Apollo','AIIMS','Sir Ganga Ram Hospital', 'Dr. Ram Manohar Lohia Hospital');
+            var Chennai = new Array('Apollo Hospital','Fortis Malar Hospital','SRM Hospital','St. Isabella Hospital','Sankara Nethralaya');
+
+            var categoryFood= document.getElementById('categoryFood');
+            //alert(categoryFood);
+            var program= document.getElementById('typeFood');
+            //program.option['select'] = new Option(Bangalore['select'],'select');
+            var selected = categoryFood.value;
+             
+            /** Remove all options in second dropdown list selection **/
+            program.options.length=0;
+              var option = document.createElement("option");
+                option.text = "--Hospitals--";
+                program.add(option,program[0]);
+            if(selected == 1){
+                i=1;
+                for(node in Bangalore){
+                    program.add(new Option(Bangalore[node],Bangalore[node]),program[i] )
+                    i++;                
+                }
+                
+                var doclabel= document.getElementById('docs');
+                doclabel.text = 'Same Hill, Bharat Arora';
+            }else if(selected == '2' ){
+             i=1;
+                for(node in Hyderabad){
+                    program.add(new Option(Hyderabad[node],Hyderabad[node]),program[i] )
+                    i++;                
+                
+            }
+            }else if(selected==3){
+             i=1;
+                for(node in Delhi){
+                    program.add(new Option(Delhi[node],Delhi[node]),program[i] )
+                    i++;                
+                }
+            }else if(selected==4){
+             i=1;
+                for(node in Chennai){
+                    program.add(new Option(Chennai[node],Chennai[node]),program[i] )
+                    i++;                
+                }
+            }
+            else{
+            program.options[0] = new Option('Please select','NA');
+            }
+        }
+                            
+   
+
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page
+      .home
+       
+        .teaser
+          .content
+            h2    Select doctor
+            //p Virtual Medicare
+            .home-teaser-icons
+              .home-teaser-icons1
+                select#categoryFood(onchange='updateSecondSelection();')
+                    option(value='0') City
+                    option(value='1') Bangalore
+                    option(value='2') Hyderabad
+                    option(value='3') Delhi
+                    option(value='4') Chennai
+                    
+                select#typeFood
+                    option(value='NA') Please select
+                    li
+                        input(type='submit', href='#', sumbit='', name='submit', value='Search')
+                                      
+                    
+                label#docs
+                    
+                br.clear
+            .blog-articles
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

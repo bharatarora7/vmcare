@@ -1,0 +1,441 @@
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-12T21:31:21.954Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-12T21:32:10.978Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T09:54:29.152Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T10:00:37.464Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T10:01:21.041Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T10:08:25.684Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2015-09-13T10:08:25.710Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2015-09-13T10:08:25.714Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T10:26:45.643Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:07:47.360Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:39:09.863Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:40:55.366Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:42:36.280Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:47:52.260Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:49:35.765Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:50:11.377Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:55:08.485Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:56:31.394Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:57:23.824Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T11:59:50.106Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T12:02:19.778Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T12:03:00.335Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T12:04:59.601Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T12:19:14.971Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:35:16.332Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:37:28.075Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:44:56.244Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:48:34.126Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:50:24.094Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:51:24.758Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:52:08.004Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:53:38.236Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T16:54:44.508Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T17:37:39.361Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T17:41:57.664Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T17:43:22.498Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T17:55:29.892Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-13T18:18:14.033Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-14T04:54:38.781Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2015-09-22T08:31:14.823Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T08:32:11.941Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T08:44:50.758Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T08:47:23.102Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T14:43:49.093Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T14:45:12.569Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T14:48:32.072Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-22T14:55:55.696Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-24T08:17:47.940Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-24T10:14:25.290Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-24T10:34:21.083Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-09-29T12:07:27.355Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2015-09-30T13:03:25.033Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2015-09-30T13:03:27.042Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:21:19.560Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:31:18.989Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:36:34.848Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:37:12.135Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:38:12.197Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:38:56.094Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:39:33.076Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:43:47.953Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:51:48.230Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:52:33.062Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:54:56.237Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T05:58:54.912Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:00:40.733Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:02:40.424Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:03:35.160Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:08:22.123Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:12:26.756Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:13:39.206Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:14:12.627Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:15:53.148Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:44:12.002Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:45:29.799Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T06:46:20.561Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:29:07.589Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:30:31.111Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:32:55.026Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:33:51.686Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:35:53.230Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:38:12.067Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:43:46.920Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:44:25.206Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:49:14.752Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:50:29.663Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:51:16.173Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:52:19.201Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:53:14.941Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:55:24.876Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:55:58.683Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:56:42.882Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:57:22.944Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T07:58:45.110Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:00:10.478Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:03:54.446Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:05:46.869Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:06:39.162Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:49:43.736Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:50:33.267Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:54:01.470Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:55:09.073Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:57:23.592Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:58:19.262Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:59:14.242Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T08:59:41.297Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:02:16.578Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:03:51.870Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:05:32.839Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:06:17.248Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:09:04.021Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:11:33.056Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:13:11.313Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:14:17.189Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:17:57.492Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:18:45.698Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:20:49.914Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:21:22.899Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:22:23.453Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:23:54.517Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:27:57.115Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:29:53.639Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:32:07.922Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:35:29.096Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:36:41.381Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T09:38:51.571Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T11:09:02.914Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-05T12:08:38.461Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-06T09:38:39.781Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-24T02:51:30.745Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-24T03:14:44.176Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-24T03:40:33.392Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2015-10-24T04:24:22.911Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2015-10-24T04:24:24.931Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-10-28T09:39:30.876Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-11-12T06:24:24.831Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T06:39:29.221Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T06:43:15.868Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T07:35:32.797Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-04T07:35:32.819Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-04T07:35:32.820Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T07:42:48.992Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:16:02.277Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:20:15.898Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:26:22.345Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:27:00.194Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:29:00.964Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:32:02.854Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:33:42.057Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:38:36.464Z"}
+{"level":"error","message":"Internal error(400): Validation failed","timestamp":"2016-01-04T09:38:39.665Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:39:19.351Z"}
+{"level":"error","message":"Internal error(400): Validation failed","timestamp":"2016-01-04T09:39:21.904Z"}
+{"level":"info","message":"New article created with id: 568a3dde9b22973415786dd5","timestamp":"2016-01-04T09:39:42.117Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:41:12.658Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T09:42:14.714Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T11:56:46.676Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-04T11:56:46.699Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-04T11:56:46.701Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T11:56:59.230Z"}
+{"level":"info","message":"New user - myapi1:abc1234","timestamp":"2016-01-04T11:56:59.254Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-04T11:56:59.255Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T11:57:19.659Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-04T11:57:19.681Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-04T11:57:19.684Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-04T12:21:33.424Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T06:00:22.373Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-05T06:00:22.397Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-05T06:00:22.399Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T06:03:22.217Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T06:48:19.888Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T06:53:32.720Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T06:57:49.210Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T07:03:22.986Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T07:06:23.924Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T07:07:22.416Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T07:10:18.875Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T07:12:53.243Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T07:14:37.715Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:14:11.563Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-05T08:14:11.587Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-05T08:14:11.589Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:25:53.102Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:33:52.616Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:37:59.670Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:47:33.337Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:53:10.500Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-05T08:53:10.527Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-05T08:53:10.560Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T08:53:31.061Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-05T09:12:43.354Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:20:33.152Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:21:50.257Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:24:42.162Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:26:25.443Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:30:43.762Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:35:07.625Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:36:09.658Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:37:06.141Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:38:26.792Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:46:08.025Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:50:00.773Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T06:54:11.274Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:01:02.496Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:03:58.622Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:04:06.227Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:05:02.001Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:09:47.535Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:11:50.592Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:12:39.945Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:13:25.593Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:14:10.415Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:14:38.710Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:18:54.238Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:20:25.269Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:21:07.084Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:21:31.461Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:25:22.836Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:26:51.102Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:28:14.363Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:29:12.342Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:30:09.254Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:31:56.914Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:34:25.787Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:35:54.807Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-06T07:35:54.831Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-06T07:35:54.833Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:36:00.736Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T07:40:10.128Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:51:14.616Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:53:41.271Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:54:23.846Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:56:05.521Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:56:59.297Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:57:18.737Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:59:07.142Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T09:59:43.789Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:02:47.653Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:05:30.957Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:13:56.321Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:16:33.027Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:25:52.536Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:28:00.921Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:28:59.881Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T10:29:37.769Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T11:04:59.068Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T12:10:21.468Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-06T12:10:21.490Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-06T12:10:21.493Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-06T12:10:30.633Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T05:39:08.916Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T06:41:26.169Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T06:48:17.356Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T07:01:06.402Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T07:02:19.572Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T07:04:43.803Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T08:54:21.586Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:22:06.372Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-07T09:22:06.395Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-07T09:22:06.398Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:22:18.831Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:25:15.464Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:33:41.604Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:35:00.888Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:48:40.725Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:49:44.857Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-07T09:52:31.417Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T05:59:09.606Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:01:02.075Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:02:30.716Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:03:58.065Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:12:44.980Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:13:38.245Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:17:17.438Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:18:15.994Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:18:27.845Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:19:00.484Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:20:48.847Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:23:14.457Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:25:05.319Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:25:56.821Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:26:59.409Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:27:48.067Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:30:09.102Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:30:49.441Z"}
+{"level":"info","message":"New user - myapi:abc1234","timestamp":"2016-01-08T06:30:49.464Z"}
+{"level":"info","message":"New client - android:SomeRandomCharsAndNumbers","timestamp":"2016-01-08T06:30:49.466Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:31:10.286Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:32:33.076Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:34:54.982Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:35:22.831Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:36:13.953Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:37:14.419Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:38:09.792Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T06:40:11.536Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T08:40:13.773Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:03:43.509Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:12:41.296Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:13:49.731Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:18:40.137Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:23:56.466Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:26:32.890Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:29:45.917Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:30:29.543Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:36:52.695Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:37:24.302Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:46:32.504Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:51:15.943Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:52:34.593Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:54:12.850Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:56:00.742Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T09:57:12.238Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:01:49.469Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:02:36.497Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:04:00.914Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:05:13.861Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:19:10.067Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:20:17.501Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:21:01.220Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:23:10.405Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:26:14.406Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:27:33.842Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:28:48.478Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:29:33.486Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:30:32.702Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:32:21.377Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:32:26.624Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T10:50:21.812Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T11:47:20.861Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T11:48:22.581Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T11:50:49.631Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T12:01:51.268Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T12:03:41.060Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-08T12:04:24.184Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T03:35:16.691Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T03:36:04.211Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T03:37:39.159Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T03:49:49.302Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:03:23.736Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:05:59.952Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:06:46.450Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:08:35.590Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:09:27.134Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:12:02.561Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:13:33.521Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-09T04:17:54.488Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T03:58:21.390Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T03:59:14.167Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:00:27.135Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:02:01.879Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:02:37.187Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:03:49.913Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:09:02.858Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:10:41.914Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:11:21.010Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:12:49.984Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:14:35.702Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:17:50.857Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:19:57.704Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:22:46.177Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T04:24:44.103Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T10:40:39.173Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T10:41:32.063Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T10:46:20.493Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T10:47:15.649Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T10:58:56.505Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:01:36.019Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:01:46.384Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:38:48.810Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:39:57.682Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:40:59.734Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:42:06.402Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:44:43.803Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:45:57.743Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-10T11:47:21.916Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-11T09:57:32.564Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-11T09:58:16.921Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-11T09:58:46.230Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-13T08:57:49.465Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-13T09:01:24.360Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-13T11:53:49.500Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-14T08:23:15.973Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-14T08:23:54.063Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-15T08:03:52.399Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:07:55.781Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:07:57.778Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:07:59.817Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:01.845Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:03.846Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:05.888Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:07.914Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:09.919Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:11.943Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:13.974Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:15.983Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:18.013Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:20.014Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:22.017Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:24.014Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:26.017Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:28.022Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:30.027Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:32.042Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-15T10:08:34.050Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-17T06:15:01.877Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-01-17T06:15:13.597Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-17T06:15:43.573Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-26T06:40:43.035Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-27T10:23:37.745Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-01-28T05:19:56.167Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-02-18T06:56:11.040Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T06:56:35.782Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T06:58:05.310Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T06:58:23.845Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T06:58:37.663Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T06:59:46.761Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T07:00:55.755Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T09:35:22.844Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-02-18T09:36:07.813Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-28T06:16:34.475Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-28T06:18:04.559Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-28T06:36:42.354Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-28T07:25:50.275Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-28T08:32:07.422Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-28T10:32:39.773Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-28T11:07:38.870Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-29T04:12:32.430Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-30T05:52:36.999Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-30T06:28:34.646Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-30T08:13:23.222Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-30T08:46:08.379Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-30T10:46:32.138Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-31T02:04:05.447Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-03-31T02:14:50.816Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-31T04:16:18.562Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-31T06:16:56.836Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-31T08:17:38.077Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-03-31T10:18:10.508Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2016-04-15T11:01:28.514Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-04-18T03:32:39.507Z"}
+{"level":"error","message":"Connection error: failed to connect to [localhost:27017]","timestamp":"2016-04-18T07:19:57.471Z"}

@@ -1,0 +1,76 @@
+doctype html
+script(src="http://code.jquery.com/jquery-1.11.3.min.js")  
+  
+script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+html
+  
+  head
+  
+    script.
+    
+      // var login = function() {        
+      // var user = $('#username').val();
+      // var pass = $('#pass').val();
+      // alert(user);     
+      // 
+      // $.post("/health",{user: user,password: pass});
+      // 
+      // }
+
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page
+      .home       
+        
+        .teaser
+          .content
+            h2 Login 
+            p Virtual Medicare
+            .home-teaser-icons
+              
+             
+                h2.fs-title Sign in
+                h3.fs-subtitle These will be used as login credentials
+                form#msform(name='input1', action='authenticate', method='post')                
+                  input(type='hidden', name='grant_type', value='password')
+                  input(type='hidden', name='client_id', value='android')
+                  input(type='hidden', name='client_secret', value='SomeRandomCharsAndNumbers')               
+                  fieldset
+                  
+                    |username
+                    input.input-field(type='text',id='username' name='username', value='')
+                    |password
+                    input.input-field(type='password',id='pass' name='password', value='')   
+                                                           
+                    input(type="submit", value="Submit")   
+                                  
+                    p: a(href='/signup?rurl='+rurl) Not registered? signup...
+                    p: a(href='/forgotpassword') Forgot password?              
+            .blog-articles          
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

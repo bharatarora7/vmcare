@@ -1,0 +1,465 @@
+// doctype html
+// html
+//   head
+//     title= title
+//     link(rel='stylesheet', href='/stylesheets/style.css')
+//   body
+//     block content
+doctype html
+script(src="http://code.jquery.com/jquery-1.11.3.min.js")  
+link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css')
+script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js')
+link(rel='stylesheet', href='/stylesheets/pqgrid.min.css')
+script(type='text/javascript', src='/javascripts/pqgrid.min.js') 
+
+html
+  script.
+      ///////////////////HealthRecord Details///////////////////////////////////////
+      pdObj={};
+      $(function(){
+         var ajaxObj = {
+            dataType: "JSON",
+            beforeSend: function () {
+                this.pqGrid("showLoading");
+            },
+            complete: function () {
+                this.pqGrid("hideLoading");
+            },
+            error: function () {
+                this.pqGrid("rollback");
+            }
+        };
+
+        //to check whether any row is currently being edited.
+        function isEditing($grid) {
+            var rows = $grid.pqGrid("getRowsByClass", { cls: 'pq-row-edit' });
+            if (rows.length > 0) {
+                //focus on editor if any 
+                $grid.find(".pq-editor-focus").focus();
+                return true;
+            }
+            return false;
+        }
+        //called by delete button.
+        function deleteRow(rowIndx, $grid) {
+            //alert('Invoked');
+            $grid.pqGrid("addClass", { rowIndx: rowIndx, cls: 'pq-row-delete' });
+            var rowData = $grid.pqGrid("getRowData", { rowIndx: rowIndx });
+            //var gridData = $grid.pqGrid("getRowData", { rowIndx: rowIndx });          
+            //alert(obj.dataModel.data.length); 
+            var ans = window.confirm("Are you sure to delete row No " + (rowIndx + 1) + "?");
+          
+            if (ans) {
+                $grid.pqGrid("deleteRow", { rowIndx: rowIndx, effect: true });
+           
+                // var ProductID = $grid.pqGrid("getRecId", { rowIndx: rowIndx });
+                // alert(ProductID);
+                // alert( obj.dataModel.data[0]);
+                // obj.dataModel.data.splice(rowIndx, 1);
+                // $grid.pqGrid("commit");
+                // $grid.pqGrid("refreshDataAndView");   
+                //alert(obj.dataModel.data.length);            
+            }
+            else {
+                $grid.pqGrid("removeClass", { rowIndx: rowIndx, cls: 'pq-row-delete' });
+            }
+        }
+        function editRow(rowIndx, $grid) {
+            alert('entered in edit');
+            $grid.pqGrid("addClass", { rowIndx: rowIndx, cls: 'pq-row-edit' });
+            $grid.pqGrid("editFirstCellInRow", { rowIndx: rowIndx });             
+            return update(rowIndx, $grid);
+           
+            //change edit button to update button and delete to cancel.
+            // var $tr = $grid.pqGrid("getRow", { rowIndx: rowIndx }),
+            //     $btn = $tr.find("button.edit_btn");
+            // $btn.button("option", { label: "Update", "icons": { primary: "ui-icon-check"} })
+            //     .unbind("click")
+            //     .click(function (evt) {
+            //         evt.preventDefault();
+            //         return update(rowIndx, $grid);
+            //     });
+            
+            $btn = $tr.find("button.delete_btn");
+            //$btn.next().button("option", { label: "Cancel", "icons": { primary: "ui-icon-cancel"} })
+             $btn.next().button("option", { label: "Ok", "icons": { primary: "ui-icon-cancel"} })
+                 .unbind("click")
+                .click(function (evt) {
+                    $grid.pqGrid("quitEditMode");
+                    $grid.pqGrid("removeClass", { rowIndx: rowIndx, cls: 'pq-row-edit' });
+                    $grid.pqGrid("refreshRow", { rowIndx: rowIndx });
+                    $grid.pqGrid("rollback");
+                });
+        }
+        //called by add button in toolbar.
+        function addRow($grid) {
+           
+            if (isEditing($grid)) {
+                return false;
+            }
+            //append empty row in the first row.                            
+            var rowData = {param1:'',param2:''}; //empty row template
+            $grid.pqGrid("addRow", { rowIndxPage: 0, rowData: rowData });
+
+        }
+      
+        // var data = [['1','Height','6.1'],      
+        // ['2','Weight','68 Kg']];
+        //Json data sample
+         var data = [['1','Name','CVS'],      
+      ['2','Phone','203-877-4329'], ['3','Address','']
+      , ['4','City',''], ['5','State',''], ['6','Zip',''], ['7','24 Hrs','']
+      ];
+      
+      var pdObj = {
+           title: "<b>Primary Pharmacy</b>",
+           
+           toolbar: {
+                items: [
+                    { type: 'button', icon: 'ui-icon-plus', label: 'Add', listeners: [
+                        { "click": function (evt, ui) {
+                            var $grid = $(this).closest('.pq-grid');
+                            addRow($grid);
+                            //debugger;
+                        }
+                        }
+                    ]
+                    }
+                ]
+            },
+            scrollModel: {
+                autoFit: true
+            },  
+            quitEditMode: function (evt, ui) {
+                var $grid = $(this);
+                if (evt.keyCode != $.ui.keyCode.ESCAPE) {
+                    $grid.pqGrid("saveEditCell");
+                }
+            },
+            //make rows editable selectively.
+            editable: function (ui) {
+                var $grid = $(this);
+                var rowIndx = ui.rowIndx;
+                return true;
+                // if ($grid.pqGrid("hasClass", { rowIndx: rowIndx, cls: 'pq-row-edit' }) == true) {
+                //     return true;
+                // }
+                // else {
+                //     return false;
+                // }
+            },
+             //use refresh event to display jQueryUI buttons and bind events.
+            refresh: function () {
+                //debugger;
+                var $grid = $(this);
+                if (!$grid) {
+                    return;
+                }
+                //delete button
+                $grid.find("button.delete_btn").button({ icons: { primary: 'ui-icon-close'} })
+                .unbind("click")
+                .bind("click", function (evt) {
+                    // if (isEditing($grid)) {
+                    //     return false;
+                    // }
+                    var $tr = $(this).closest("tr"),
+                        rowIndx = $grid.pqGrid("getRowIndx", { $tr: $tr }).rowIndx;
+                    deleteRow(rowIndx, $grid);
+                });
+                //edit button
+                // $grid.find("button.edit_btn").button({ icons: { primary: 'ui-icon-pencil'} })
+                // .unbind("click")
+                // .bind("click", function (evt) {
+                //     if (isEditing($grid)) {
+                //         return false;
+                //     }
+                //     var $tr = $(this).closest("tr"),
+                //         rowIndx = $grid.pqGrid("getRowIndx", { $tr: $tr }).rowIndx;
+                //     editRow(rowIndx, $grid);
+                //     return false;
+                // });
+
+                //rows which were in edit mode before refresh, put them in edit mode again.
+                var rows = $grid.pqGrid("getRowsByClass", { cls: 'pq-row-edit' });
+                if (rows.length > 0) {
+                    var rowIndx = rows[0].rowIndx;
+                    editRow(rowIndx, $grid);
+                }
+            }     
+          
+      };
+      pdObj.width = 500;
+      pdObj.height = 350;
+      pdObj.colModel = [
+      { title: "Pharmacy ID", dataType: "integer", dataIndx: "pharmacydetailid", editable: false, hidden: true, width: 80 },    
+      { title:"detail", width:250, dataType:"string" },     
+      { title:"", width:150, dataType:"string"},
+      { title: "", editable: false, minWidth: 165, sortable: false, render: function (ui) {
+                        return "\<button type='button' class='delete_btn'>Delete</button>";
+                    }
+                    }
+      ]
+      pdObj.dataModel = {data:data,
+      recIndx: "pharmacydetailid"};
+      $("#grid_array").pqGrid(pdObj);
+      });
+      
+      
+      
+      
+      
+      //////////////////////////////General Care/////////////////////////////
+      gcObj={};
+      $(function(){
+         var ajaxObj = {
+            dataType: "JSON",
+            beforeSend: function () {
+                this.pqGrid("showLoading");
+            },
+            complete: function () {
+                this.pqGrid("hideLoading");
+            },
+            error: function () {
+                this.pqGrid("rollback");
+            }
+        };
+
+        //to check whether any row is currently being edited.
+        function isEditing($grid) {
+            var rows = $grid.pqGrid("getRowsByClass", { cls: 'pq-row-edit' });
+            if (rows.length > 0) {
+                //focus on editor if any 
+                $grid.find(".pq-editor-focus").focus();
+                return true;
+            }
+            return false;
+        }
+        //called by delete button.
+        function deleteRow(rowIndx, $grid) {
+            //alert('Invoked');
+            $grid.pqGrid("addClass", { rowIndx: rowIndx, cls: 'pq-row-delete' });
+            var rowData = $grid.pqGrid("getRowData", { rowIndx: rowIndx });
+            var ans = window.confirm("Are you sure to delete row No " + (rowIndx + 1) + "?");
+
+            if (ans) {
+                $grid.pqGrid("deleteRow", { rowIndx: rowIndx, effect: true });
+
+                // var ProductID = $grid.pqGrid("getRecId", { rowIndx: rowIndx });
+                // alert(ProductID);
+                // alert( obj.dataModel.data[0]);
+                // obj.dataModel.data.splice(rowIndx, 1);
+                // $grid.pqGrid("commit");
+                // $grid.pqGrid("refreshDataAndView");   
+                          
+            }
+            else {
+                $grid.pqGrid("removeClass", { rowIndx: rowIndx, cls: 'pq-row-delete' });
+            }
+        }
+        function editRow(rowIndx, $grid) {
+            alert('entered in edit');
+            $grid.pqGrid("addClass", { rowIndx: rowIndx, cls: 'pq-row-edit' });
+            $grid.pqGrid("editFirstCellInRow", { rowIndx: rowIndx });             
+            return update(rowIndx, $grid);
+           
+            //change edit button to update button and delete to cancel.
+            // var $tr = $grid.pqGrid("getRow", { rowIndx: rowIndx }),
+            //     $btn = $tr.find("button.edit_btn");
+            // $btn.button("option", { label: "Update", "icons": { primary: "ui-icon-check"} })
+            //     .unbind("click")
+            //     .click(function (evt) {
+            //         evt.preventDefault();
+            //         return update(rowIndx, $grid);
+            //     });
+            $btn = $tr.find("button.delete_btn");
+            //$btn.next().button("option", { label: "Cancel", "icons": { primary: "ui-icon-cancel"} })
+             $btn.next().button("option", { label: "Ok", "icons": { primary: "ui-icon-cancel"} })
+                 .unbind("click")
+                .click(function (evt) {
+                    $grid.pqGrid("quitEditMode");
+                    $grid.pqGrid("removeClass", { rowIndx: rowIndx, cls: 'pq-row-edit' });
+                    $grid.pqGrid("refreshRow", { rowIndx: rowIndx });
+                    $grid.pqGrid("rollback");
+                });
+        }
+        //called by add button in toolbar.
+        function addRow($grid) {
+           
+            if (isEditing($grid)) {
+                return false;
+            }
+            //append empty row in the first row.                            
+            var rowData = {param1:'',param2:''}; //empty row template
+            $grid.pqGrid("addRow", { rowIndxPage: 0, rowData: rowData });
+
+        }
+      
+      var data = [['1','Name','CVS'],      
+      ['2','Phone','203-877-4329'], ['3','Address','']
+      , ['4','City',''], ['5','State',''], ['6','Zip',''], ['7','24 Hrs','']
+      ];
+      var gcObj = {
+           title: "<b>Secondary Pharmacy</b>",
+           toolbar: {
+                items: [
+                    { type: 'button', icon: 'ui-icon-plus', label: 'Add', listeners: [
+                        { "click": function (evt, ui) {
+                            var $grid = $(this).closest('.pq-grid');
+                            addRow($grid);
+                            //debugger;
+                        }
+                        }
+                    ]
+                    }
+                ]
+            },
+            scrollModel: {
+                autoFit: true
+            },
+            quitEditMode: function (evt, ui) {
+                var $grid = $(this);
+                if (evt.keyCode != $.ui.keyCode.ESCAPE) {
+                    $grid.pqGrid("saveEditCell");
+                }
+            },
+            //make rows editable selectively.
+            editable: function (ui) {
+                var $grid = $(this);
+                var rowIndx = ui.rowIndx;
+                return true;
+                // if ($grid.pqGrid("hasClass", { rowIndx: rowIndx, cls: 'pq-row-edit' }) == true) {
+                //     return true;
+                // }
+                // else {
+                //     return false;
+                // }
+            },
+             //use refresh event to display jQueryUI buttons and bind events.
+            refresh: function () {
+                //debugger;
+                var $grid = $(this);
+                if (!$grid) {
+                    return;
+                }
+                //delete button
+                $grid.find("button.delete_btn").button({ icons: { primary: 'ui-icon-close'} })
+                .unbind("click")
+                .bind("click", function (evt) {
+                    // if (isEditing($grid)) {
+                    //     return false;
+                    // }
+                    var $tr = $(this).closest("tr"),
+                        rowIndx = $grid.pqGrid("getRowIndx", { $tr: $tr }).rowIndx;
+                    deleteRow(rowIndx, $grid);
+                });
+                //edit button
+                // $grid.find("button.edit_btn").button({ icons: { primary: 'ui-icon-pencil'} })
+                // .unbind("click")
+                // .bind("click", function (evt) {
+                //     if (isEditing($grid)) {
+                //         return false;
+                //     }
+                //     var $tr = $(this).closest("tr"),
+                //         rowIndx = $grid.pqGrid("getRowIndx", { $tr: $tr }).rowIndx;
+                //     editRow(rowIndx, $grid);
+                //     return false;
+                // });
+
+                //rows which were in edit mode before refresh, put them in edit mode again.
+                var rows = $grid.pqGrid("getRowsByClass", { cls: 'pq-row-edit' });
+                if (rows.length > 0) {
+                    var rowIndx = rows[0].rowIndx;
+                    editRow(rowIndx, $grid);
+                }
+            }     
+          
+      };
+      gcObj.width = 500;
+      gcObj.height = 350;
+      gcObj.colModel = [
+      { title: "Pharmacy ID", dataType: "integer", dataIndx: "pharmacydetailid", editable: false, hidden: true, width: 80 },    
+      { title:"detail", width:250, dataType:"string"},     
+      { title:"", width:150, dataType:"string"},
+      { title: "", editable: false, minWidth: 165, sortable: false, render: function (ui) {
+                        return "\<button type='button' class='delete_btn'>Delete</button>";
+                    }
+                    }
+      ]
+      gcObj.dataModel = {data:data,
+      recIndx: "pharmacydetailid"};
+      $("#gcgrid_array").pqGrid(gcObj);
+      });
+      
+      
+      
+     
+      
+      
+      
+      var health = function() {
+      //var fgrid= document.getElementById('familygrid_array');
+          window.location.href = '/mydoctors'
+      }
+      
+      var savePD = function() {
+          alert(fgObj.dataModel.data);
+      }
+ 
+
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/medicalhistory.css')
+    
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page     
+      .home
+      
+        .teaser
+          .content
+            h2 My Pharmacies
+            p Virtual Medicare            
+            
+                 form(name='input1', action='health', method='post')
+                  table(style=' width: 1000px;')
+                    tr
+                     
+                        td(style='width: 500px;')
+                          .home-teaser-icons(align='left')
+                            .home-teaser-icons1 
+                              .form-style-3
+                                form(name='input2', action='/login', method='post')
+                                  div#grid_array
+                        td(style='width: 500px;')
+                                  div#gcgrid_array
+                    
+            input.input-field(type='button', name='next', value='next' onclick="health()")
+            input.input-field(type='button', name='save', value='save' onclick="savePD()")                   
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

@@ -1,0 +1,218 @@
+
+doctype html
+   
+   
+script(src="http://code.jquery.com/jquery-1.11.3.min.js")
+    
+html
+  script.
+  
+    var health = function() {
+      window.location.href = '/health'
+      }
+    
+      $(document).on('click', '.medheader', function(){
+        //alert('entered');
+        $header = $(this);
+        
+        //getting the next element
+        $content = $header.next();
+        //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+        $content.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of header based on visibility of content div
+            $header.text(function () {
+                //change text based on condition                
+                return $content.is(":visible") ? "Collapse" : "Expand";
+            });
+        });
+      });
+      
+  head
+       
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/medicalhistory.css')
+    
+    meta(charset='utf-8')
+    script(type='text/javascript' src="/javascripts/calendar/scripts/daypilot-all.min.js")
+    script(type='text/javascript' src="/javascripts/calendar/scripts/jquery-1.9.1.min.js")
+ 
+  
+  body
+  
+   .container
+   
+      nav
+        .content
+            a.logo(href='/')
+              //img(src='/images/vmcaremain.png', alt='FastDelivery')
+            ul.menu
+              li
+                a(href='/') Home
+              li
+                a(href='/blog') Blog           
+              li
+                a(href='/services') Services
+              li
+                a(href='/contacts') Contacts
+              li
+                a(href='/login') Login
+              li
+                a(href='/RegisterDetails') HealthRecord
+            br.clear
+      .home
+          
+          .teaser
+            .content
+              h2 Choose the desired service
+              p Virtual Medicare
+              .medcontainer
+                .medheader                  
+                  
+                   span Expand
+                .content
+                  .form-style-3  
+                    
+                    table(style=' width: 900px;')
+                      tr
+                        td(style='width: 250px;vertical-align: top;')
+                          .home-teaser-icons
+                            .home-teaser-icons1 
+                
+                                  fieldset
+                                    legend My Family
+                                    label(for='field1212')
+                                      span
+                                        | First Name 
+                                        span
+                                      label(for='field12122')
+                                      span
+                                        | Bharat                                   
+                                    label(for='field21212')
+                                      span
+                                        | Last Name 
+                                        span
+                                      label(for='field12222')
+                                      span
+                                        | Arora        
+                                    label(for='field3233')
+                                      span
+                                        | Phone 
+                                        span
+                                      label(for='field13434')
+                                      span
+                                        | 99873635353                                  
+                                  fieldset
+                                    legend Informed Doctors. Better Care
+                                    label(for='field6')
+                                      span(style='width: 250px;')
+                                        | Your health record is 80 % Complete                              
+                              br.clear
+                          td(style='width: 550px;')
+                            .home-teaser-icons(align='left')
+                              .home-teaser-icons1 
+                
+                                  
+                                  fieldset
+                                      legend Health Record (Basics)
+                                      label(for='field14')
+                                        span(style='width: 250px;')
+                                          | Height 
+                                          span
+                                        label(for='field25')
+                                        span
+                                          | 5.6"                                            
+                                      label(for='field254')
+                                        span(style='width: 250px;')
+                                          | Weight 
+                                          span
+                                        label(for='field2')
+                                        span
+                                          | 68 kg   
+                                    fieldset
+                                      legend General Care (Encounter)
+                                      label(for='field1545')
+                                        span(style='width: 250px;')
+                                          | Encounter
+                                        span(style='width: 250px; ')
+                                          | Date of most recent
+                                        table(style=' width: 500px;')
+                                          tr
+                                            td(style='width: 250px;')                                                        
+                                                
+                                                span
+                                                  | Last visit to primary care physician 
+                                            td
+                                                span(style='width: 250px;')
+                                                    | 01:13:12 
+                                          tr
+                                            td
+                                                span(style='width: 150px;')
+                                                    | Last physical 
+                                            td
+                                                span(style='width: 250px;')
+                                                    | 01:20:12 
+                                  
+                                  input.input-field(type='button', name='edit', value='edit' onclick="health()")
+                         br.clear                  
+                     
+                                          
+              .blog-articles 
+              table
+              tr
+                td(style='width: 1000px;')
+                  | Dr Sam (ENT) -Calendar  
+                  #dp
+              
+              .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015    
+                  
+               
+          
+    script(type='text/javascript').
+    
+      var dp = new DayPilot.Month("dp");
+      // view
+      dp.startDate = "2013-03-25";  // or just dp.startDate = "2013-03-25";
+      // generate and load events
+      for (var i = 0; i < 10; i++) {
+      var duration = Math.floor(Math.random() * 1.2);
+      var start = Math.floor(Math.random() * 6) - 3; // -3 to 3
+      var e = new DayPilot.Event({
+      start: new DayPilot.Date("2013-03-04T00:00:00").addDays(start),
+      end: new DayPilot.Date("2013-03-04T12:00:00").addDays(start).addDays(duration),
+      id: DayPilot.guid(),
+      text: "Event " + i
+      });
+      dp.events.add(e);
+      }
+      // event creating
+      dp.onTimeRangeSelected = function (args) {
+      var name = prompt("New event name:", "Event");
+      dp.clearSelection();
+      if (!name) return;
+      var e = new DayPilot.Event({
+      start: args.start,
+      end: args.end,
+      id: DayPilot.guid(),
+      text: name
+      });
+      dp.events.add(e);
+      };
+      dp.onEventClicked = function(args) {
+      alert("clicked: " + args.e.id());
+      };
+      dp.init();
+      
+      
+      
+        
+    
+      
+

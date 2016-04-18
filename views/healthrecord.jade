@@ -1,0 +1,78 @@
+
+doctype html
+html
+  head
+    title #{title}
+<!--    link(rel='stylesheet', href='/stylesheets/style.css') -->
+    link(rel='stylesheet', href='/stylesheets/medicalhistory.css')
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page
+      .home
+       
+        .teaser
+          .content
+            h2 Health Record
+            p Virtual Medicare
+              .form-style-3
+                  form
+                    fieldset
+                      legend Personal
+                      label(for='field1')
+                        span
+                          | Height 
+                          span.required *
+                        input.input-field(type='text', name='height', value='')
+                      label(for='field2')
+                        span
+                          | Weight 
+                          span.required *
+                        input.input-field(type='text', name='weight', value='')
+                      label(for='field3')
+                        span
+                          | Phone 
+                          span.required *
+                        input.input-field(type='text', name='field3', value='')
+                      label(for='field4')
+                        span Subject
+                        select.select-field(name='field4')
+                          option(value='Appointment') Appointment
+                          option(value='Interview') Interview
+                          option(value='Regarding a post') Regarding a post
+                    fieldset
+                      legend Message
+                      label(for='field6')
+                        span
+                          | Message 
+                          span.required *
+                        textarea.textarea-field(name='field6')
+                      label
+                        span  
+                        input(type='submit', value='Submit')
+            .blog-articles
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

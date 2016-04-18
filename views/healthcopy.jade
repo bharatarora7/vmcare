@@ -1,0 +1,212 @@
+// doctype html
+// html
+//   head
+//     title= title
+//     link(rel='stylesheet', href='/stylesheets/style.css')
+//   body
+//     block content
+doctype html
+
+html
+  script.
+  
+      var health = function() {
+      window.location.href = '/health'
+      }
+
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/medicalhistory.css')
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+          br.clear
+      // home page
+      .home
+       
+        .teaser
+          .content
+            h2 Choose the desired service
+            p Virtual Medicare            
+            - if (!username)
+                form(name='input1', action='health', method='post')
+                  table(style=' width: 1000px;')
+                    tr
+                      td(style='width: 250px;vertical-align: top;')
+                        .home-teaser-icons
+                          .home-teaser-icons1 
+                            .form-style-3
+                              
+                                fieldset
+                                  legend My Family
+                                  label(for='fname')
+                                    span
+                                      | First Name 
+                                      span.required *
+                                    input.input-field(type='text', name='fname', value='')
+                                  label(for='field2')
+                                    span
+                                      | Last Name 
+                                      span.required *
+                                    input.input-field(type='email', name='lname', value='')
+                                  label(for='field3')
+                                    span
+                                      | Phone 
+                                      span.required *
+                                    input.input-field(type='text', name='phone', value='')
+                                                              
+                                fieldset
+                                  legend Informed Doctors. Better Care
+                                  label(for='field6')
+                                    span(style='width: 250px;')
+                                      | Your health record is 80 % Complete
+                                                                    
+                            br.clear
+                        td(style='width: 550px;')
+                          .home-teaser-icons(align='left')
+                            .home-teaser-icons1 
+                              .form-style-3
+                                form(name='input2', action='/login', method='post')
+                                  fieldset
+                                    legend Health Record (Basics)
+                                    label(for='field1')
+                                      span
+                                        | Height 
+                                        span.required *
+                                      input.input-field(type='text', name='height', value='')
+                                    label(for='field2')
+                                      span
+                                        | Weight 
+                                        span.required *
+                                      input.input-field(type='email', name='weight', value='')
+                                  fieldset
+                                    legend General Care (Encounter)
+                                    label(for='field1')
+                                      span(style='width: 250px;')
+                                        | Encounter
+                                      span(style='width: 250px;')
+                                        | Date of most recent
+                                      table(style=' width: 500px;')
+                                        tr
+                                          td
+                                            input.input-field(type='text', name='field11', value='')(style='width: 200px;')
+                                          td
+                                            input.input-field(type='text', name='field22', value='')(style='width: 200px;')
+                                        tr
+                                          td
+                                            input.input-field(type='text', name='field111', value='')(style='width: 200px;')
+                                          td
+                                            input.input-field(type='text', name='field112', value='')(style='width: 200px;')
+                    
+                input(type="submit", value="Submit")                   
+            - else
+                .form-style-3  
+                  
+                  table(style=' width: 1000px;')
+                    tr
+                      td(style='width: 250px;vertical-align: top;')
+                        .home-teaser-icons
+                          .home-teaser-icons1 
+              
+                                fieldset
+                                  legend My Family
+                                  label(for='field1')
+                                    span
+                                      | First Name 
+                                      span
+                                    label(for='field1')
+                                    span
+                                      | Bharat                                   
+                                  label(for='field2')
+                                    span
+                                      | Last Name 
+                                      span
+                                    label(for='field1')
+                                    span
+                                      | Arora        
+                                  label(for='field3')
+                                    span
+                                      | Phone 
+                                      span
+                                    label(for='field1')
+                                    span
+                                      | 99873635353                                  
+                                fieldset
+                                  legend Informed Doctors. Better Care
+                                  label(for='field6')
+                                    span(style='width: 250px;')
+                                      | Your health record is 80 % Complete                              
+                            br.clear
+                        td(style='width: 550px;')
+                          .home-teaser-icons(align='left')
+                            .home-teaser-icons1 
+              
+                                
+                                fieldset
+                                    legend Health Record (Basics)
+                                    label(for='field1')
+                                      span(style='width: 250px;')
+                                        | Height 
+                                        span
+                                      label(for='field2')
+                                      span
+                                        | 5.6"                                            
+                                    label(for='field2')
+                                      span(style='width: 250px;')
+                                        | Weight 
+                                        span
+                                      label(for='field2')
+                                      span
+                                        | 68 kg   
+                                  fieldset
+                                    legend General Care (Encounter)
+                                    label(for='field1')
+                                      span(style='width: 250px;')
+                                        | Encounter
+                                      span(style='width: 250px; ')
+                                        | Date of most recent
+                                      table(style=' width: 500px;')
+                                        tr
+                                          td(style='width: 250px;')                                                        
+                                              
+                                              span
+                                                | Last visit to primary care physician 
+                                          td
+                                              span(style='width: 250px;')
+                                                  | 01:13:12 
+                                        tr
+                                          td
+                                              span(style='width: 150px;')
+                                                  | Last physical 
+                                          td
+                                              span(style='width: 250px;')
+                                                  | 01:20:12 
+                                
+                                input.input-field(type='button', name='edit', value='edit' onclick="health()")
+                                  
+                        br.clear
+                        
+            .blog-articles
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015

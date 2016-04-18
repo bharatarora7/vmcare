@@ -1,0 +1,57 @@
+// doctype html
+// html
+//   head
+//     title= title
+//     link(rel='stylesheet', href='/stylesheets/style.css')
+//   body
+//     block content
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      // navigation
+      nav
+        .content
+          a.logo(href='/')
+            //img(src='/images/vmcaremain.png', alt='FastDelivery')
+          ul.menu
+            li
+              a(href='/') Home
+            li
+              a(href='/blog') Blog           
+             li
+              a(href='/services') Services
+            li
+              a(href='/contacts') Contacts
+            li
+              a(href='/login') Login
+            li
+              a(href='/RegisterDetails') HealthRecord
+          br.clear
+      // home page
+      .home
+       
+        .teaser
+          .content
+            h2 Choose the desired service
+            p Virtual Medicare
+            .home-teaser-icons
+              .home-teaser-icons1
+                a(href='/registerdetails')
+                  img(src='/images/2-askadoctor.png', alt='')
+                a(href='/specialist')
+                  img(src='/images/2-consultspecialist.png', alt='')
+                a(href='/board')
+                  img(src='/images/2-getboardopinion.png', alt='')
+                br.clear
+            .blog-articles
+          .content
+           // | {}
+          br.clear
+      // footer
+      .footer
+        .content
+          | VMCare © 2015
